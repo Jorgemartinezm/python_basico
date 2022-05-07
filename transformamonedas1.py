@@ -1,3 +1,12 @@
+def datos_moneda(valor):
+    dolar = input('Elija la cantidad deseada: ')
+    dolar = float(dolar)
+    moneda = valor
+    resultado = dolar / moneda
+    resultado = round(resultado, 2)
+    resultado = str(resultado)
+    print('Tienes ', resultado, 'dolares')
+
 menu = """
 Bienvenido al conversor de monedas
 
@@ -8,33 +17,14 @@ Bienvenido al conversor de monedas
 Elige una opción: """
 
 opcion = input(menu)
-
 if opcion == '1':
-    dolar = input('Elija la cantidad deseada: ')
-    dolar = float(dolar)
-    euro = 0.94
-    resultado = dolar / euro
-    resultado = round(resultado, 2)
-    resultado = str(resultado)
-    print('Tienes ', resultado, 'euros')
+    datos_moneda(1.06)
 
 elif opcion == '2':
-    dolar = input('Elija la cantidad deseada: ')
-    dolar = float(dolar)
-    pargentino = 65
-    resultado = dolar / pargentino
-    resultado = round(resultado, 2)
-    resultado = str(resultado)
-    print('Tienes ', resultado, 'pesos argentinos')
+    datos_moneda(95)
     
 elif opcion == '3':
-    dolar = input('Elija la cantidad deseada: ')
-    dolar = float(dolar)
-    pmexicano = 24
-    resultado = dolar / pmexicano
-    resultado = round(resultado, 2)
-    resultado = str(resultado)
-    print('Tienes ', resultado, 'pesos mexicanos')
+    datos_moneda(24)
 
 else:
       print("Elige una opción válida")
