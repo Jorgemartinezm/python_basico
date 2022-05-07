@@ -5,6 +5,7 @@ dolar = input('''¡¡¡Bienvenido al transformamonedas!!!
 dolar = float(dolar)
 euro = 0.94
 resultado = dolar / euro
+resultado = round(resultado, 2)
 resultado = str(resultado)
 
 print('Tienes ', resultado, 'euros')
